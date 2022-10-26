@@ -10,15 +10,50 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </head>
     <style>
-        .Animation  {
+        .AnimationML10  {
 
-            animation: example 2s;
-  animation-timing-function: ease;
+            animation: animationML10 1s;
+            animation-timing-function: ease;
 }
-        @keyframes example {
-from {margin-left:400px; opacity: 0.2;}
-to {margin-left:25px; opacity: 1;}
+        .AnimationML0 {
+            animation: animationML0 1s;
+            animation-timing-function: ease;
 }
+        .AnimationPL1 {
+            animation: animationPL1 1s;
+            animation-timing-function: ease;
+}
+        .AnimationPL2 {
+            animation-delay: 1s;
+            animation: animationPL2 1.5s;
+            animation-timing-function: ease;
+}
+        .AnimationPL3 {
+            animation-delay: 2s;
+            animation: animationPL3 2s;
+            animation-timing-function: ease;
+}
+        @keyframes animationML10 {
+from {margin-left:100%; opacity: 0.2;}
+to {margin-left:10%; opacity: 1;}
+        }
+        @keyframes animationML0 {
+from {margin-left:300px; opacity: 0.2;}
+to {margin-left:0px; opacity: 1;}
+        }
+        @keyframes animationPL1 {
+from {padding-left:400px; opacity: 0.2;}
+to {padding: left 0;; opacity: 1;}
+        }
+        @keyframes animationPL2 {
+from {padding-left:400px; opacity: 0.2;}
+to {padding: left 0;; opacity: 1;}
+        }
+        @keyframes animationPL3 {
+from {padding-left:400px; opacity: 0.2;}
+to {padding: left 0;; opacity: 1;}
+        }
+        
     </style>
 <!-- style="background-color:#212529; color:  white;"-->
     <body style="color: azure; background-size: 100% 100%; background-image: url('https://wallpaperaccess.com/full/552581.jpg');">
@@ -67,7 +102,7 @@ to {margin-left:25px; opacity: 1;}
                     <div style="overflow:hidden;padding-bottom:56.25%;position:relative;height:0;">
                         <iframe style="left:0;top:0;height:100%;width:100%;position:absolute;" width="580" height="315" src="https://www.youtube.com/embed/bQGszw0ITo4?autoplay=1&mute=1" title="Addictiva Party Moments 2021 Salsa Bachata Kizomba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                     </div>
-                    <div class="container col-xxl-8 px-4 py-5 Animation" class="tabcontent">
+                    <div class="container col-xxl-8 px-4 py-5 AnimationML10" class="tabcontent">
                         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                           <div class="col-10 col-sm-8 col-lg-6 ">
                             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/faa48d2d-12c2-43d1-bf23-b5e99857825b/ddanutv-39cde392-7484-42ec-8b83-f00e58094746.png/v1/fill/w_622,h_350,q_70,strp/dance_of_lights_by_ellysiumn_ddanutv-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZhYTQ4ZDJkLTEyYzItNDNkMS1iZjIzLWI1ZTk5ODU3ODI1YlwvZGRhbnV0di0zOWNkZTM5Mi03NDg0LTQyZWMtOGI4My1mMDBlNTgwOTQ3NDYucG5nIiwiaGVpZ2h0IjoiPD00NTAiLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cL2ZhYTQ4ZDJkLTEyYzItNDNkMS1iZjIzLWI1ZTk5ODU3ODI1YlwvZWxseXNpdW1uLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.3USm-rYv-0y6spWqrtA0V2B4-tpDl1qMHX25VTjDd94" 
@@ -85,7 +120,7 @@ to {margin-left:25px; opacity: 1;}
                 </div>
 
                 <!-- content Dance Schools -->
-                <div id="danceSchools" class="tabcontent text-center Animation" style="display: none;">
+                <div id="danceSchools" class="tabcontent text-center AnimationML0" style="display: none;">
                     <!-- Dance Schools -->
                     <br>
                         <h1>~ Dance Schools We Recommend ~</h1>
@@ -144,7 +179,7 @@ to {margin-left:25px; opacity: 1;}
                 </div>
 
                 <!-- content Contact -->
-                <div id="Contact" class="tabcontent text-center container" style="display: none;">
+                <div id="Contact" class="tabcontent text-center container AnimationML10" style="display: none;">
                     <br>
                     <h1 class="card-title">~ Contact Information ~</h1>
                     <br>
@@ -185,16 +220,16 @@ to {margin-left:25px; opacity: 1;}
  
 
                 <!-- content Test -->
-                <div id="Test" class="tabcontent text-center container Animation" style="display: none;">
+                <div id="Test" class="tabcontent text-center container" style="display: none;">
                     <!-- Test -->
                     <!-- Button trigger modal -->
                     <br>
                     <h1>~ Menu ~</h1>
                     <br>
-                    <div class="card text-bg-dark  mb-3" style="width: 100%;">
+                    <div class="card text-bg-dark  mb-3 AnimationPL1" style="width: 100%;">
                         <div class="card-body">
                           <h4 class="card-title">Signature Cocktails</h4>
-                          <p class="card-text">Try our signature cocktails inspired by your favority latin style.</p>
+                          <p class="card-text">Try our signature cocktails inspired by your favorite latin style.</p>
                           <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             View Signature Cocktails
                           </button>
@@ -219,7 +254,7 @@ to {margin-left:25px; opacity: 1;}
                         </div>
                       </div>
                       
-                      <div class="card text-bg-dark  mb-3" style="width: 100%;">
+                      <div class="card text-bg-dark  mb-3 AnimationPL2" style="width: 100%;">
                         <div class="card-body">
                           <h4 class="card-title">Classic Cocktails</h4>
                           <p class="card-text"><p>Up for a classic one? We got you covered.</p>
@@ -248,7 +283,7 @@ to {margin-left:25px; opacity: 1;}
                         </div>
                       </div>
                       
-                      <div class="card text-bg-dark  mb-3" style="width:  100%;">
+                      <div class="card text-bg-dark  mb-3 AnimationPL3" style="width:  100%;">
                         <div class="card-body">
                           <h4 class="card-title">Drinks Beer and Wine</h4>
                           <p class="card-text">Check out our wide variety in spirits.</p>
