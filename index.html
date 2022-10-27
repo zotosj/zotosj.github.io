@@ -10,6 +10,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </head>
     <style>
+        .siteColor:hover{
+            color:#ff9800;
+        }
         .cardhover:hover{
      transform: scale(1.05);
   box-shadow: 0 10px 20px #ff9800, 0 4px 8px rgba(0,0,0,.06);
@@ -38,8 +41,8 @@
             animation-timing-function: ease;
 }
         @keyframes animationML10 {
-from {margin-left:100%; opacity: 0.2;}
-to {margin-left:10%; opacity: 1;}
+from {margin-left:50%; opacity: 0.2;}
+to {margin-left:0px; opacity: 1;}
         }
         @keyframes animationML0 {
 from {margin-left:300px; opacity: 0.2;}
@@ -66,32 +69,32 @@ to {padding: left 0;; opacity: 1;}
                 <div id="page-container">
                     <div id="content-wrap">
                         <!--  Navbar  -->
-                        <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+                        <nav style="background-color: #212529;" class="navbar navbar-expand-lg navbar-dark">
                             <div class="container-fluid">
-                                <a style="background-color: black;" class="navbar-brand" href="#" onclick="openPage('Home')">
+                                <a style="background-color: #212529;" class="navbar-brand siteColor" href="#" onclick="openPage('Home')">
                                 <span style="color: #ff9800;"><b>Addi</b></span>ctiva</a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler siteColor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="collapse navbar-collapse siteColor" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://www.facebook.com/Addictiva/events/?ref=page_internal" target="_blank">Events</a>
+                                            <a class="nav-link siteColor" href="https://www.facebook.com/Addictiva/events/?ref=page_internal" target="_blank">Events</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" onclick="openPage('danceSchools')">Dance Schools</a>
+                                            <a class="nav-link siteColor" href="#" onclick="openPage('danceSchools')">Dance Schools</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" onclick="openPage('Menu')">Menu</a>
+                                            <a class="nav-link siteColor" href="#" onclick="openPage('Menu')">Menu</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://www.facebook.com/Addictiva/photos/?ref=page_internal"  target="_blank">Gallery</a>
+                                            <a class="nav-link siteColor" href="https://www.facebook.com/Addictiva/photos/?ref=page_internal"  target="_blank">Gallery</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" onclick="openPage('Reservations')">Reservations</a>
+                                            <a class="nav-link siteColor" href="#" onclick="openPage('Reservations')">Reservations</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" onclick="openPage('Test')">Test</a>
+                                            <a class="nav-link siteColor" href="#" onclick="openPage('Test')">Test</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -106,7 +109,7 @@ to {padding: left 0;; opacity: 1;}
                     <div style="overflow:hidden;padding-bottom:56.25%;position:relative;height:0;">
                         <iframe style="left:0;top:0;height:100%;width:100%;position:absolute;" width="580" height="315" src="https://www.youtube.com/embed/bQGszw0ITo4?autoplay=1&mute=1" title="Addictiva Party Moments 2021 Salsa Bachata Kizomba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                     </div>
-                    <div class="container col-xxl-8 px-4 py-5 AnimationML10" class="tabcontent">
+                    <div class="container col-xxl-8 px-4 py-5 " class="tabcontent">
                         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                           <div class="col-10 col-sm-8 col-lg-6 ">
                             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/faa48d2d-12c2-43d1-bf23-b5e99857825b/ddanutv-39cde392-7484-42ec-8b83-f00e58094746.png/v1/fill/w_622,h_350,q_70,strp/dance_of_lights_by_ellysiumn_ddanutv-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZhYTQ4ZDJkLTEyYzItNDNkMS1iZjIzLWI1ZTk5ODU3ODI1YlwvZGRhbnV0di0zOWNkZTM5Mi03NDg0LTQyZWMtOGI4My1mMDBlNTgwOTQ3NDYucG5nIiwiaGVpZ2h0IjoiPD00NTAiLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cL2ZhYTQ4ZDJkLTEyYzItNDNkMS1iZjIzLWI1ZTk5ODU3ODI1YlwvZWxseXNpdW1uLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.3USm-rYv-0y6spWqrtA0V2B4-tpDl1qMHX25VTjDd94" 
@@ -124,12 +127,12 @@ to {padding: left 0;; opacity: 1;}
                 </div>
 
                 <!-- content Dance Schools -->
-                <div id="danceSchools" class="tabcontent text-center AnimationML10 container" style="display: none;">
+                <div id="danceSchools" class="tabcontent text-center container" style="display: none;">
                     <!-- Dance Schools -->
                     <br>
                         <h1>~ Dance Schools We Recommend ~</h1>
                     <br>
-                    <div class="card text-bg-dark mb-3 mt-3 cardhover" style="max-width: 100%;">
+                    <div class="card text-bg-dark mb-3 mt-3 cardhover AnimationML10" style="max-width: 100%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="https://images3.alphacoders.com/106/1069102.jpg" class="img-fluid rounded-start" alt="...">
@@ -142,7 +145,7 @@ to {padding: left 0;; opacity: 1;}
                           </div>
                         </div>
                       </div>
-                      <div class="card mb-3 text-bg-dark cardhover" style="max-width: 100%;">
+                      <div class="card mb-3 text-bg-dark cardhover AnimationML10" style="max-width: 100%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="https://wallpaperaccess.com/full/3246081.jpg" class="img-fluid rounded-start" alt="...">
@@ -155,7 +158,7 @@ to {padding: left 0;; opacity: 1;}
                           </div>
                         </div>
                       </div>
-                      <div class="card mb-3 text-bg-dark cardhover" style="max-width: 100%;">
+                      <div class="card mb-3 text-bg-dark cardhover AnimationML10" style="max-width: 100%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="https://wallpaperaccess.com/full/343619.jpg" class="img-fluid rounded-start" alt="...">
@@ -188,31 +191,6 @@ to {padding: left 0;; opacity: 1;}
                     <h1 class="card-title">~ Contact Information ~</h1>
                     <br>
                     <!-- Contact -->   
-                    <!--<div class="container col-xxl-8 px-4 py-5">
-                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                            <div class="col-10 col-sm-8 col-lg-6 ">
-                            <div class="mapouter"><p class="gmap_canvas"><iframe max-width="100%" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=addictiva%20athens%20bar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe></p></div></p>
-                            </div>
-                            <div class="col-lg-6">
-                            <div class="card">
-                                <h5 class="card-header"><b>email</b></h5>
-                                <div class="card-body">
-                                    <h5 class="card-title">addictivabar@gmail.com</h5>
-                                </div>
-                                </div>
-                                <div class="card">
-                                <h5 class="card-header"><b>Τηλέφωνο</b></h5>
-                                <div class="card-body">
-                                    <h5 class="card-title">694 406 6764</h5>
-                                </div>
-                                </div>
-                                <div class="card">
-                                <h5 class="card-header"><a style="color: #ff9800; text-decoration: none;" href="https://www.google.com/maps/place/Addictiva+Athens+Bar/@37.993086,23.7634564,17z/data=!3m1!4b1!4m5!3m4!1s0x14a199e505226047:0x5457e5e9067c8a90!8m2!3d37.9930818!4d23.7656451" target="_blank">
-                                    Doukissis Plakentias, Athina 115 23</a></h5>
-                            </div>
-                        </div>
-                        </div>-->
-
                         <div class="card mt-2 text-bg-dark" style="border: none;">
                             <div class="card-body">
                                 <p class="card-text"><p><b>Mail:</b> addictivabar@gmail.com</p> <p><b>Phone:</b> (30) 6944066764</p> <p><a href="#"><i class="fa fa-map-marker me-1" style="font-size:20px;color: #ff9800"></i></a>Doukissis Plakentias, Athina 115 23</p></p>
@@ -334,8 +312,8 @@ to {padding: left 0;; opacity: 1;}
                     <a href="#"><i class="fa fa-twitter" style="font-size:25px;color: black;"></i></a>
                     </section>
                 </div>
-                <a href="#" onclick="openPage('Contact')" style="color: white; text-decoration: none;"><b>Contact Information</b></a>
-                <div class="text-center p-3" style="background-color: black;">
+                <a href="#" onclick="openPage('Contact')" style="color: white; text-decoration: none;"><b class="siteColor">Contact Information</b></a>
+                <div class="text-center p-3" style="background-color: #212529;">
                     &copy;2022 All rights reserved
                 </div>
                 </footer>
